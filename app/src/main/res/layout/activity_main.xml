@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="320dp"
+        android:layout_height="259dp"
+        android:contentDescription="@string/text_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        app:srcCompat="@drawable/w02" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/text_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/cityNameEditText"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/textWhite"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Enter the city name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:labelFor="@id/imageView"
+        android:text="@string/enter_city_name"
+        android:textColor="@color/textWhite"
+        android:textColorHint="@color/textWhite"
+        android:textCursorDrawable="@color/textWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
+
+    <Button
+        android:id="@+id/checkTheWeatherButton"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif"
+        android:onClick="search"
+        android:text="CHECK THE WEATHER"
+        android:textColor="@color/textWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+</androidx.constraintlayout.widget.ConstraintLayout>
